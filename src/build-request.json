@@ -1,0 +1,92 @@
+{
+  "kind": "build_request",
+  "title": "Fix admin login authentication functionality",
+  "projectName": "Simran Enterprises",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-32",
+      "text": "Debug and fix the admin login authentication flow to ensure successful login with email admin@gmail.com and password Admin@92505",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "login funnality it's not working"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Admin can successfully log in using email admin@gmail.com and password Admin@92505",
+        "Authentication state persists in localStorage after successful login",
+        "User is redirected to /admin dashboard after successful login",
+        "Invalid credentials display the error message 'Invalid email or password'",
+        "Login button shows loading state during authentication"
+      ]
+    },
+    {
+      "id": "REQ-33",
+      "text": "Verify that the useAuth hook login function correctly validates credentials against hardcoded admin credentials and updates authentication state",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Login function returns true for correct credentials (admin@gmail.com / Admin@92505)",
+        "Login function returns false for incorrect credentials",
+        "Authentication state (isAuthenticated, user) is updated correctly on successful login",
+        "localStorage persistence works correctly for auth state"
+      ]
+    },
+    {
+      "id": "REQ-34",
+      "text": "Ensure AdminAuthGuard component correctly reads authentication state from useAuth hook and allows access to /admin route when authenticated",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Authenticated users can access /admin dashboard without redirect",
+        "Unauthenticated users are redirected to /admin/login with redirect parameter",
+        "Authentication check completes without infinite loops or flickering",
+        "Loading spinner displays during authentication verification"
+      ]
+    },
+    {
+      "id": "REQ-35",
+      "text": "Fix any console errors or JavaScript exceptions occurring during the login process on the AdminLogin page",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ]
+      },
+      "acceptanceCriteria": [
+        "No console errors when submitting login form",
+        "Form submission handler executes without exceptions",
+        "Error states display correctly when authentication fails",
+        "Success state triggers navigation to admin dashboard"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use hardcoded credentials: email admin@gmail.com and password Admin@92505",
+    "Maintain localStorage-based authentication persistence",
+    "Do not modify the Internet Identity hook files (frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx)",
+    "Keep existing admin login page design matching the mockup with teal theme and shield icon"
+  ],
+  "nonGoals": [
+    "Implementing backend authentication with token validation",
+    "Adding password reset or forgot password functionality",
+    "Creating user registration or multi-user admin system",
+    "Replacing email/password authentication with Internet Identity"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

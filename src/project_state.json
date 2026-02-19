@@ -1,0 +1,368 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 13,
+  "summary": "Professional construction and interior design website for Simran Enterprises with modern design, service offerings, project gallery, and contact integration",
+  "architectural_notes": [
+    "Modern, professional design with construction theme colors (teal + yellow/gold combination)",
+    "Mobile-responsive with fast loading and SEO optimization",
+    "Multi-page structure: Home, About Us, Services, Projects/Gallery, Contact Us",
+    "Sticky header with navigation",
+    "Footer includes contact details and GST number: 27DEQPP2708B1ZG",
+    "Backend storage system for contact form submissions using Internet Computer canister",
+    "Admin dashboard to view, filter, and manage form submissions",
+    "Email/password authentication for admin access using hardcoded credentials (admin@gmail.com / Admin@92505)",
+    "Admin dashboard includes delete functionality for contact form submissions"
+  ],
+  "known_issues": [
+    "Login functionality not working properly"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-home-page-with-hero-section-displaying-the-tagline-building-your-dreams-with-quality-trust-followed-by-an-about-preview-section-services-highlights-section-why-choose-us-section-and-a-prominent-get-a-free-quote-call-to-action-button",
+      "title": "Create a home page with hero section displaying the tagline 'Building Your Dreams with Quality & Trust', followed by an about preview section, services highlights section, why choose us section, and a prominent 'Get a Free Quote' call-to-action button",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-us-page-displaying-information-about-simran-enterprises-including-business-details-owner-name-sandeep-paswan-location-mahatma-jyotiba-phule-nagar-near-water-tank-ambernath-west-421502-and-company-values-mission",
+      "title": "Create an About Us page displaying information about Simran Enterprises, including business details: Owner Name (Sandeep Paswan), Location (Mahatma Jyotiba Phule Nagar, Near Water Tank, Ambernath West 421502), and company values/mission",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-page-listing-all-service-offerings-residential-construction-commercial-construction-interior-designing-renovation-remodeling-and-civil-contracting-with-descriptions-for-each-service",
+      "title": "Create a Services page listing all service offerings: Residential Construction, Commercial Construction, Interior Designing, Renovation & Remodeling, and Civil Contracting, with descriptions for each service",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-projects-gallery-page-to-showcase-completed-construction-and-interior-design-projects-with-image-galleries",
+      "title": "Create a Projects/Gallery page to showcase completed construction and interior design projects with image galleries",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-page-with-a-contact-form-fields-name-phone-email-message-google-maps-integration-showing-the-ambernath-west-location-click-to-call-buttons-for-phone-numbers-9022119244-and-7754910092-and-a-whatsapp-contact-button",
+      "title": "Create a Contact page with a contact form (fields: Name, Phone, Email, Message), Google Maps integration showing the Ambernath West location, click-to-call buttons for phone numbers 9022119244 and 7754910092, and a WhatsApp contact button",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-header-navigation-that-remains-visible-during-scroll-containing-links-to-home-about-us-services-projects-gallery-and-contact-us-pages",
+      "title": "Implement a sticky header navigation that remains visible during scroll, containing links to Home, About Us, Services, Projects/Gallery, and Contact Us pages",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-footer-displaying-contact-details-phone-numbers-9022119244-and-7754910092-email-simranenterprises06082013-gmail-com-address-mahatma-jyotiba-phule-nagar-near-water-tank-ambernath-west-421502-gst-number-27deqpp2708b1zg-and-social-media-icons",
+      "title": "Create a footer displaying contact details (phone numbers 9022119244 and 7754910092, email simranenterprises06082013@gmail.com, address Mahatma Jyotiba Phule Nagar, Near Water Tank, Ambernath West 421502), GST Number 27DEQPP2708B1ZG, and social media icons",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-mobile-responsive-design-ensuring-all-pages-and-components-adapt-properly-to-mobile-tablet-and-desktop-screen-sizes-with-optimized-layouts-and-touch-friendly-interactions",
+      "title": "Implement mobile-responsive design ensuring all pages and components adapt properly to mobile, tablet, and desktop screen sizes with optimized layouts and touch-friendly interactions",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-visual-design-with-teal-and-yellow-gold-as-the-primary-construction-themed-color-palette-professional-typography-with-bold-headings-clean-modern-layout-and-consistent-styling-across-all-pages-to-convey-trust-and-professionalism",
+      "title": "Apply a cohesive visual design with teal and yellow/gold as the primary construction-themed color palette, professional typography with bold headings, clean modern layout, and consistent styling across all pages to convey trust and professionalism",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-admin-dashboard-page-at-route-admin-that-displays-all-contact-form-submissions-in-a-table-format-showing-name-phone-email-message-and-submission-timestamp",
+      "title": "Create an admin dashboard page at route '/admin' that displays all contact form submissions in a table format showing name, phone, email, message, and submission timestamp",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-navigation-link-to-admin-in-the-header-navigation-menu-that-is-only-visible-when-user-is-authenticated-via-internet-identity",
+      "title": "Add a navigation link to 'Admin' in the header navigation menu that is only visible when user is authenticated via Internet Identity",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-authentication-guard-on-the-admin-page-that-requires-internet-identity-login-and-displays-a-login-prompt-if-user-is-not-authenticated",
+      "title": "Implement authentication guard on the admin page that requires Internet Identity login and displays a login prompt if user is not authenticated",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-search-and-filter-functionality-to-the-admin-dashboard-to-filter-contact-submissions-by-name-email-or-phone-number",
+      "title": "Add search and filter functionality to the admin dashboard to filter contact submissions by name, email, or phone number",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-sorting-functionality-to-the-admin-dashboard-table-to-sort-submissions-by-timestamp-newest-first-by-default-with-ability-to-toggle-sort-order",
+      "title": "Add sorting functionality to the admin dashboard table to sort submissions by timestamp (newest first by default) with ability to toggle sort order",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-ability-to-view-full-message-content-in-a-modal-or-expanded-view-when-clicking-on-a-submission-row-in-the-admin-dashboard",
+      "title": "Add ability to view full message content in a modal or expanded view when clicking on a submission row in the admin dashboard",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-admin-login-page-at-route-admin-login-that-displays-internet-identity-login-interface-with-company-branding-simran-enterprises-logo-and-teal-color-scheme-and-a-prominent-login-with-internet-identity-button",
+      "title": "Create a new admin login page at route '/admin/login' that displays Internet Identity login interface with company branding (Simran Enterprises logo and teal color scheme) and a prominent 'Login with Internet Identity' button",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-modify-the-existing-admin-dashboard-route-admin-to-redirect-unauthenticated-users-to-admin-login-instead-of-showing-inline-login-prompt",
+      "title": "Modify the existing admin dashboard route '/admin' to redirect unauthenticated users to '/admin/login' instead of showing inline login prompt",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-adminauthguard-component-to-support-redirect-based-authentication-flow-instead-of-displaying-inline-login-prompt",
+      "title": "Update AdminAuthGuard component to support redirect-based authentication flow instead of displaying inline login prompt",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-manage-submissions-text-or-description-on-the-admin-login-page-explaining-that-administrators-can-view-and-manage-contact-form-submissions-after-logging-in",
+      "title": "Add 'Manage Submissions' text or description on the admin login page explaining that administrators can view and manage contact form submissions after logging in",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-internet-identity-authentication-system-from-the-admin-login-flow",
+      "title": "Remove Internet Identity authentication system from the admin login flow",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-email-password-login-form-on-adminlogin-page-with-email-and-password-input-fields-matching-the-uploaded-screenshot-design",
+      "title": "Create email/password login form on AdminLogin page with email and password input fields matching the uploaded screenshot design",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-frontend-authentication-logic-that-calls-backend-login-method-with-email-and-password-stores-authentication-token-in-session-local-storage-and-redirects-to-admin-dashboard-on-success",
+      "title": "Implement frontend authentication logic that calls backend login method with email and password, stores authentication token in session/local storage, and redirects to admin dashboard on success",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-adminauthguard-component-to-check-for-email-password-authentication-token-instead-of-internet-identity-authentication",
+      "title": "Update AdminAuthGuard component to check for email/password authentication token instead of Internet Identity authentication",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-admin-navigation-link-visibility-condition-based-on-internet-identity-authentication-from-header-component",
+      "title": "Remove Admin navigation link visibility condition based on Internet Identity authentication from Header component",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-logout-functionality-that-clears-authentication-token-and-redirects-to-admin-login-page",
+      "title": "Add logout functionality that clears authentication token and redirects to admin login page",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-admin-login-page-design-to-match-the-uploaded-mockup-image-2-png-with-feature-list-section-displaying-after-logging-in-you-can-followed-by-four-features-with-teal-checkmark-icons-view-all-contact-form-submissions-in-real-time-search-and-filter-customer-inquiries-access-detailed-contact-information-and-messages-and-manage-customer-relationships-efficiently",
+      "title": "Update the admin login page design to match the uploaded mockup (image-2.png) with feature list section displaying 'After logging in, you can:' followed by four features with teal checkmark icons: 'View all contact form submissions in real-time', 'Search and filter customer inquiries', 'Access detailed contact information and messages', and 'Manage customer relationships efficiently'",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-admin-login-form-displays-the-error-message-invalid-email-or-password-in-a-styled-alert-component-with-red-accent-color-when-authentication-fails-matching-the-design-shown-in-the-uploaded-mockup",
+      "title": "Ensure the admin login form displays the error message 'Invalid email or password' in a styled alert component with red accent color when authentication fails, matching the design shown in the uploaded mockup",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-style-the-admin-login-form-inputs-and-button-to-match-the-uploaded-mockup-design-with-clean-borders-proper-spacing-teal-login-button-with-shield-icon-and-consistent-typography",
+      "title": "Style the admin login form inputs and button to match the uploaded mockup design with clean borders, proper spacing, teal login button with shield icon, and consistent typography",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-debug-and-fix-the-admin-login-authentication-flow-to-ensure-successful-login-with-email-admin-gmail-com-and-password-admin-92505",
+      "title": "Debug and fix the admin login authentication flow to ensure successful login with email admin@gmail.com and password Admin@92505",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-verify-that-the-useauth-hook-login-function-correctly-validates-credentials-against-hardcoded-admin-credentials-and-updates-authentication-state",
+      "title": "Verify that the useAuth hook login function correctly validates credentials against hardcoded admin credentials and updates authentication state",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-adminauthguard-component-correctly-reads-authentication-state-from-useauth-hook-and-allows-access-to-admin-route-when-authenticated",
+      "title": "Ensure AdminAuthGuard component correctly reads authentication state from useAuth hook and allows access to /admin route when authenticated",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-any-console-errors-or-javascript-exceptions-occurring-during-the-login-process-on-the-adminlogin-page",
+      "title": "Fix any console errors or JavaScript exceptions occurring during the login process on the AdminLogin page",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Home page with hero section, about preview, services highlights, why choose us section, and CTA button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "About Us page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Services page listing residential construction, commercial construction, interior designing, renovation & remodeling, and civil contracting",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Projects/Gallery page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Contact page with form (name, phone, email, message), Google Maps integration, click-to-call buttons, and WhatsApp contact button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Mobile-responsive design with construction theme colors (teal + yellow/gold), sticky header, and footer with contact details and GST number",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Build backend storage system to store contact form submissions in Internet Computer canister",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Create admin dashboard page to view and manage all contact form submissions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add timestamp field to ContactEntry type in backend/main.mo to record when each contact form submission was received",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Replace Internet Identity with email/password authentication for admin login using credentials admin@gmail.com / Admin@92505",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Implement email/password authentication in backend with hardcoded admin credentials (email: admin@gmail.com, password: Admin@92505)",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Update backend getAllContacts method to verify email/password authentication token instead of Internet Identity principal",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Add delete message functionality to admin dashboard to remove contact form submissions",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Simran Enterprises Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

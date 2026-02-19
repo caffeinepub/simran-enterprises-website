@@ -1,0 +1,84 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-debug-and-fix-the-admin-login-authentication-flow-to-ensure-successful-login-with-email-admin-gmail-com-and-password-admin-92505",
+      "featureTitle": "Debug and fix the admin login authentication flow to ensure successful login with email admin@gmail.com and password Admin@92505",
+      "files": [
+        "frontend/src/components/admin/AdminAuthGuard.tsx",
+        "frontend/src/hooks/useAuth.ts",
+        "frontend/src/pages/AdminLogin.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-32"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-verify-that-the-useauth-hook-login-function-correctly-validates-credentials-against-hardcoded-admin-credentials-and-updates-authentication-state",
+      "featureTitle": "Verify that the useAuth hook login function correctly validates credentials against hardcoded admin credentials and updates authentication state",
+      "files": [
+        "frontend/src/hooks/useAuth.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-33"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-adminauthguard-component-correctly-reads-authentication-state-from-useauth-hook-and-allows-access-to-admin-route-when-authenticated",
+      "featureTitle": "Ensure AdminAuthGuard component correctly reads authentication state from useAuth hook and allows access to /admin route when authenticated",
+      "files": [
+        "frontend/src/components/admin/AdminAuthGuard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-34"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-fix-any-console-errors-or-javascript-exceptions-occurring-during-the-login-process-on-the-adminlogin-page",
+      "featureTitle": "Fix any console errors or JavaScript exceptions occurring during the login process on the AdminLogin page",
+      "files": [
+        "frontend/src/hooks/useAuth.ts",
+        "frontend/src/pages/AdminLogin.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-35"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
